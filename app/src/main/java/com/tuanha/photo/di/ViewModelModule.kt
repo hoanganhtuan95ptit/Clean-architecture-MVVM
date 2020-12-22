@@ -14,5 +14,5 @@ import java.util.concurrent.TimeUnit
 @JvmField
 val viewModelModule = module {
 
-    single<PhotoViewModel> { PhotoViewModel() }
+    single { PhotoViewModel() }
 }

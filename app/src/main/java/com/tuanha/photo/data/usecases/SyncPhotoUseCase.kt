@@ -8,7 +8,7 @@ class SyncPhotoUseCase : KoinComponent {
 
     private val photoRepository by inject<PhotoRepository>()
 
-    suspend fun invoke(param: Param) {
+    suspend fun invoke(param: Param? = null) {
         photoRepository.clearAndSave(*photoRepository.fetchPhoto().toTypedArray())
     }
 

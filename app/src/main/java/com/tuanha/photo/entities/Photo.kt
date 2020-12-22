@@ -11,12 +11,6 @@ class Photo {
     @JsonProperty("url")
     var url: String = ""
 
-    @JsonProperty("height")
-    var height: Int = 0
-
-    @JsonProperty("width")
-    var width: Int = 0
-
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (javaClass != other?.javaClass) return false
